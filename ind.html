@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendation Form</title>
+  </head>
+  <body>
+    
+<style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    select {
+      margin-bottom: 20px;
+      padding: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  
+    <h1>Movie Recommendation Form</h1>
+    <form>
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="">--Select a genre--</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+        <option value="romance">Romance</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select><br><br>
+      
+      <label for="year">Year:</label>
+      <select id="year">
+        <option value="">--Select a year--</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+      </select><br><br>
+      
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="">--Select a language--</option>
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="chinese">Chinese</option>
+        <option value="japanese">Japanese</option>
+      </select><br><br>
+      
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="">--Select a rating--</option>
+        <option value="9">9+</option>
+        <option value="8">8+</option>
+        <option value="7">7+</option>
+        <option value="6">6+</option>
+        <option value="5">5+</option>
+        <option value="4">4+</option>
+        <option value="3">3+</option>
+        <option value="2">2+</option>
+        <option value="1">1+</option>
+      </select><br><br>
+      
+      <button type="button" onclick="filterMovies()">Filter Movies</button>
+    </form>
+    
+    <h2>Filtered Movies</h2>
+    <div id="filteredMovies"></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
